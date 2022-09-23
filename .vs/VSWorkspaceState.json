@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Labb2",
+    "\\Labb2\\Butiken"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Labb2\\Butiken\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
