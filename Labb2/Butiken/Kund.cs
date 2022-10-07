@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Butiken
 {
-    public abstract class Kund
+    public class Kund
     {
         public string Name { get; private set; }
 
@@ -27,6 +27,8 @@ namespace Butiken
         {
             return "";
         }
+
+
     }
 
     

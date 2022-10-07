@@ -7,19 +7,28 @@ using System.Threading.Tasks;
 
 namespace Butiken
 {
-    public abstract class Produkt
+    public class Produkt
     {
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
         private double _pris;
+
         public double Pris
         {
             get { return _pris; }
             set { _pris = value; }
         }
 
-        
-
         private string _enhet;
-        private string _name;
+
+        public string Enhet { get; set; }
+
 
         private double _maengd;
 
@@ -29,7 +38,29 @@ namespace Butiken
             set { _maengd = value; }
         }
 
-        public abstract void LaeggIVagn();
+        public Produkt(string name, double pris, string enhet)
+        {
+            Name = name;
+            Pris = pris;
+            Enhet = enhet;
+        }
 
+        public void LaeggIVagn(Produkt vara, int amount, List<Produkt> kundvagn)
+        {
+            if (kundvagn.Contains(vara))
+            {
+
+            }
+
+            else
+            {
+                kundvagn.Add(vara);
+            }
+        }
+
+        public override string ToString()
+        {
+            return "";
+        }
     }
 }
