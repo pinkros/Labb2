@@ -25,7 +25,7 @@ namespace Butiken
         }
         public override string ToString()
         {
-            return "";
+            return $"Kund: {Name} Lösenord: {Password}";
         }
 
 

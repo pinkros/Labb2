@@ -20,9 +20,13 @@ namespace Butiken
 
         public void BuyMenu(List<Produkt> varor)
         {
+            var i = 0;
+
             foreach (Produkt produkt in varor)
             {
-                Console.WriteLine($"{produkt.Name}\t{produkt.Pris} kr/{produkt.Enhet}");
+                var nameof = char.ToUpper(produkt.Name[0]) + produkt.Name.Substring(1);
+                Console.WriteLine($"{i}. {nameof}\t {produkt.Pris} kr/{produkt.Enhet}");
+                i++;
             }
         }
     }
