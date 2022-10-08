@@ -28,7 +28,18 @@ namespace Butiken
             return $"Kund: {Name} Lösenord: {Password}";
         }
 
+        public void ViewCart(List<Produkt> cart)
+        {
+            var total = 0.0;
+            foreach (var produkt in cart)
+            {
+                var radPris = produkt.Maengd * produkt.Pris;
+                Console.WriteLine($"{produkt.Maengd} {produkt.Enhet} {produkt.Name}  {produkt.Maengd * produkt.Pris}");
+                total += radPris;
+            }
 
+            Console.WriteLine($"Total kostnad: {total} kr");
+        }
     }
 
     

@@ -9,7 +9,7 @@ C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\But
 C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\Butiken.AssemblyInfo.cs
 C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\Butiken.csproj.CoreCompileInputs.cache
 C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\Butiken.dll
-C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\refint\Butiken.dll
 C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\Butiken.pdb
 C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\Butiken.genruntimeconfig.cache
 C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\obj\Debug\net6.0\ref\Butiken.dll
+C:\Users\arvid\OneDrive\Dokument\GitHub\Labb2\Labb2\Butiken\bin\Debug\net6.0\ref\Butiken.dll
