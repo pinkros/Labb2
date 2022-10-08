@@ -10,7 +10,7 @@ namespace Butiken
     {
         public string Name { get; private set; }
 
-        private string Password { get; }
+        private string Password { get; set; }
 
         public double Rabatt { get; set; }
 
@@ -34,7 +34,7 @@ namespace Butiken
             foreach (var produkt in cart)
             {
                 var radPris = produkt.Maengd * produkt.Pris;
-                Console.WriteLine($"{produkt.Maengd} {produkt.Enhet} {produkt.Name}  {produkt.Maengd * produkt.Pris}");
+                Console.WriteLine($"{produkt.Maengd} {produkt.Enhet} {produkt.Name}  {radPris}");
                 total += radPris;
             }
 
