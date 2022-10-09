@@ -10,22 +10,22 @@ namespace Butiken
     {
         public void LogInMenu()
         {
-            Console.WriteLine();
+            Console.WriteLine("Vad vill du göra?\n1. Logga in\n2. Registrera ny användare" +
+                              "\n\n\n0.Avsluta");
         }
 
         public void ShopMenu()
         {
-
-
+            Console.WriteLine("1. Handla\n2. Se kundvagn\n3. Gå till kassan\n\n\n4. Logga ut");
         }
 
         public void BuyMenu(List<Produkt> varor)
         {
             var i = 1;
             Console.WriteLine("Vad vill du köpa?");
+
             foreach (Produkt produkt in varor)
             {
-                var nameof = char.ToUpper(produkt.Name[0]) + produkt.Name.Substring(1);
                 Console.WriteLine($"{i}. {produkt}");
                 i++;
             }

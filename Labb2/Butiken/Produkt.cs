@@ -44,32 +44,6 @@ namespace Butiken
             Pris = pris;
             Enhet = enhet;
         }
-
-        public void LaeggIVagn(Produkt vara, double amount, List<Produkt> kundvagn)
-        {
-            if (kundvagn.Contains(vara))
-            {
-                for (int i = 0; i < kundvagn.Count; i++)
-                {
-                    if (kundvagn[i].Name == vara.Name)
-                    {
-                        kundvagn[i].Maengd += amount;
-                        break;
-                    }
-                }
-            }
-
-            else
-            {
-                vara.Maengd = amount;
-                kundvagn.Add(vara);
-            }
-
-            var pris = vara.Pris * amount;
-
-            Console.WriteLine($"Du har köpt {amount} {vara.Enhet} {vara.Name} för {pris}SEK");
-        }
-
         public override string ToString()
         {
             return $"{Name}: {Pris}/{Enhet}";
