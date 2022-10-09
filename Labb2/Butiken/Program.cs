@@ -15,21 +15,59 @@ varor.Add(mjoel);
 varor.Add(mjoelk);
 varor.Add(rovor);
 
+List<Kund> kundLista = new List<Kund>();
+
 Kund kund0 = new Kund("Knatte", "123");
 Kund kund1 = new Kund("Fnatte", "321");
 Kund kund2 = new Kund("Tjatte", "213");
 
+kundLista.Add(kund0);
+kundLista.Add(kund1);
+kundLista.Add(kund2);
 
-kund0.LaeggIVagn(aegg, 12, kund0.Cart);
-kund0.LaeggIVagn(bacon, 2, kund0.Cart);
+var menuVar = "";
 
-Console.WriteLine(kund0);
-//while (true)
-//{
-//    Console.WriteLine("Välkommen till HandlarN^'s Lanthandel!");
+//kund0.LaeggIVagn(aegg, 12, kund0.Cart);
+//kund0.LaeggIVagn(bacon, 2, kund0.Cart);
 
-//    view.LogInMenu();
-
-//}
+//Console.WriteLine(kund0);
 
 
+while (true)
+{
+    Console.Clear();
+    Console.WriteLine("Välkommen till HandlarN^'s Lanthandel!\n");
+
+    view.LogInMenu();
+    menuVar = Console.ReadLine();
+
+    switch (menuVar)
+    {
+        case "1":
+
+
+
+            break;
+        case "2":
+            break;
+        case "0":
+            break;
+        default:
+            Console.WriteLine("Ej korrekt input, vänligen prova igen!");
+            Thread.Sleep(750);
+            continue;
+            
+    }
+
+}
+
+void LogInModule()
+{
+
+    while (true)
+    {
+        Console.WriteLine("Skriv in användarnamn:");
+        Console.ReadLine();
+    }
+
+}
