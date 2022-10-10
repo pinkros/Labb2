@@ -2,28 +2,24 @@
 
 View view = new View();
 List<Produkt> varor = new List<Produkt>();
+Kund? nuvarandeKund = null;
 
-Produkt aegg = new Produkt("ägg", 2.59, "st");
-Produkt bacon = new Produkt("bacon", 15.90, "hg");
-Produkt mjoel = new Produkt("mjöl", 20, "kg");
-Produkt mjoelk = new Produkt("mjölk", 17, "l");
-Produkt rovor = new Produkt("rovor", 10, "st");
 
-varor.Add(aegg);
-varor.Add(bacon);
-varor.Add(mjoel);
-varor.Add(mjoelk);
-varor.Add(rovor);
+
+
+varor.Add(new Produkt("ägg", 2.59, "st"));
+varor.Add(new Produkt("bacon", 15.90, "hg"));
+varor.Add(new Produkt("mjöl", 20, "kg"));
+varor.Add(new Produkt("mjölk", 17, "l"));
+varor.Add(new Produkt("rovor", 10, "st"));
 
 List<Kund> kundLista = new List<Kund>();
 
-Kund kund0 = new Kund("Knatte", "123");
-Kund kund1 = new Kund("Fnatte", "321");
-Kund kund2 = new Kund("Tjatte", "213");
 
-kundLista.Add(kund0);
-kundLista.Add(kund1);
-kundLista.Add(kund2);
+
+kundLista.Add(new Kund("Knatte", "123"));
+kundLista.Add(new Kund("Fnatte", "321"));
+kundLista.Add(new Kund("Tjatte", "213"));
 
 var menuVar = "";
 
@@ -45,7 +41,7 @@ while (true)
     {
         case "1":
 
-
+            LogInModule();
 
             break;
         case "2":
@@ -63,11 +59,53 @@ while (true)
 
 void LogInModule()
 {
+    var name = "";
+    
 
     while (true)
     {
         Console.WriteLine("Skriv in användarnamn:");
-        Console.ReadLine();
+        name = Console.ReadLine();
+
+        foreach (var kund in kundLista)
+        {
+            if (kund.Name == name)
+            {
+                nuvarandeKund = kund;
+            }
+        }
+
+        if (nuvarandeKund != null)
+        {
+            Console.WriteLine("Skriv in användarens lösenord:");
+
+            var pw = Console.ReadLine();
+
+
+        }
+
+        else
+        {
+
+        }
     }
+
+}
+
+void CreateNewCustomer()
+{
+
+    Console.WriteLine("Skriv in användarens namn:");
+
+    var name = Console.ReadLine();
+
+    Console.WriteLine("Skriv in användarens lösenord:");
+
+    var pw = Console.ReadLine();
+
+    kundX++;
+
+    Kund 
+
 
 }
