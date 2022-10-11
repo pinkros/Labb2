@@ -14,9 +14,14 @@ namespace Butiken
                               "\n\n\n0.Avsluta");
         }
 
-        public void ShopMenu()
+        public void ShopMenu(Kund kund)
         {
-            Console.WriteLine("1. Handla\n2. Se kundvagn\n3. Gå till kassan\n\n\n4. Logga ut");
+            Console.WriteLine(
+                $"Välkommen,{kund.Name}! Vad vill du göra idag?\n " +
+                "1. Handla\n" +
+                "2. Se kundvagn\n" +
+                "3. Gå till kassan\n" +
+                "\n\n0. Logga ut");
         }
 
         public void BuyMenu(List<Produkt> varor)

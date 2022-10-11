@@ -77,6 +77,15 @@ namespace Butiken
 
             Console.WriteLine($"Du har köpt {amount} {vara.Enhet} {vara.Name} för {pris}SEK");
         }
+
+        public bool VerifieraPassword(string? pw)
+        {
+            if (pw == Password)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 
     
