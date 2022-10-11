@@ -25,6 +25,7 @@ kundLista.Add(new Kund("Tjatte", "213"));
 
 var menuVar = "";
 
+
 //kund0.LaeggIVagn(aegg, 12, kund0.Cart);
 //kund0.LaeggIVagn(bacon, 2, kund0.Cart);
 
@@ -32,10 +33,12 @@ var menuVar = "";
 
 while (true)
 {
+    
 
     while (nuvarandeKund == null)
     {
         Console.Clear();
+       
         Console.WriteLine("Välkommen till HandlarN^'s Lanthandel!\n");
 
         view.LogInMenu();

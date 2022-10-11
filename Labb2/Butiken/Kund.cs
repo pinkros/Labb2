@@ -37,7 +37,7 @@ namespace Butiken
 
             cart += $"Total kostnad: {Math.Round(totalPrice, 2)} kr";
 
-            return $"Kund: {Name} Lösenord: {Password}\n Kundvagn:\n{cart} ";
+            return $"Kund: {Name} \n Lösenord: {Password}\n Kundvagn:{cart} ";
         }
 
         public void ViewCart()
