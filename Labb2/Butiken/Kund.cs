@@ -40,10 +40,10 @@ namespace Butiken
             return $"Kund: {Name} Lösenord: {Password}\n Kundvagn:\n{cart} ";
         }
 
-        public void ViewCart(List<Produkt> cart)
+        public void ViewCart()
         {
             var totalPrice = 0.0;
-            foreach (var produkt in cart)
+            foreach (var produkt in _cart)
             {
                 var radPris = produkt.Maengd * produkt.Pris;
                 Console.WriteLine($"{produkt.Maengd} {produkt.Enhet} {produkt.Name}  {radPris} kr");

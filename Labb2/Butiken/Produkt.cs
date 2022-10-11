@@ -46,7 +46,7 @@ namespace Butiken
         }
         public override string ToString()
         {
-            return $"{Name}: {Pris}/{Enhet}";
+            return $"{Name}: {Pris}kr/{Enhet}";
         }
     }
 }
